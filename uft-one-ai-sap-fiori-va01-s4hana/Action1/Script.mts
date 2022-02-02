@@ -1,4 +1,4 @@
-﻿Dim BrowserExecutable, oShell
+﻿Dim BrowserExecutable, oShell, counter
 
 Set oShell = CreateObject ("WSCript.shell")
 oShell.run "powershell -command ""Start-Service mediaserver"""
@@ -17,4 +17,16 @@ AppContext.Maximize																		'Maximize the application to give the best 
 AppContext.Sync																			'Wait for the browser to stop spinning
 AIUtil.SetContext AppContext																'Tell the AI engine to point at the application
 
-'AppContext.Close																			'Close the application at the end of your script
+AIUtil("text_box", "User").Type "s4h_sd_dem"
+AIUtil("text_box", "Password").Type "Welcome1"
+AIUtil("button", "Log On").Click
+conter = 0
+Do
+	counter = counter + 1
+	wait 1
+	If count >= 60 Then
+		msgbox "The search icon didn't show up within " & counter & " tries, check application."
+		ExitScript
+	End If
+Loop Until AIUtil("search").Exist
+
