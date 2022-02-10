@@ -2,7 +2,7 @@
 AIUtil.SetContext AppContext																'Tell the AI engine to point at the application
 
 AIUtil("plus").Click
-AIUtil.Table.Cell(0, 0).Click
+AIUtil("search", micAnyText, micFromBottom, 1).CheckExists True
 set objSendKey=CreateObject("WScript.shell")
 objSendKey.SendKeys "+{TAB}"
 objSendKey.SendKeys DataTable.Value("Item", "05_va01_order_details")
