@@ -20,7 +20,7 @@ AIUtil.SetContext AppContext																'Tell the AI engine to point at the 
 AIUtil("text_box", "User").Type "s4h_sd_dem"
 AIUtil("text_box", "Password").Type "Welcome1"
 AIUtil("button", "Log On").Click
-conter = 0
+counter = 0
 Do
 	counter = counter + 1
 	wait 1
