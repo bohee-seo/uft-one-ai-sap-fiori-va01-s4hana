@@ -20,7 +20,7 @@ Sales_org=Parameter("Sales_org")
 set objSendKey=CreateObject("WScript.shell")
 objSendKey.SendKeys "{BACKSPACE}"
 
-AIUtil("text_box", "Order:").Type "4402"
+AIUtil("text_box", "Order:").Type Order_number
 AIUtil.FindTextBlock("Search").Click
 
 
