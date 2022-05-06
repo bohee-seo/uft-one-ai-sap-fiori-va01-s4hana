@@ -8,7 +8,7 @@
 'Pyt_Terms=DataTable.Value("Pyt_Terms","Global")
 
 Order_Num=Parameter("Order_Num")
-Cust_ref_Date=Parameter("Cust_ref_Date")
+Cust_ref_Date=FormatDateTime((Date-1), 2)
 Cust_Reference=Parameter("Cust_Reference")
 Ship_to_Party=Parameter("Ship_to_Party")
 Ship_to_Party=Parameter("Sold_to_Party")
