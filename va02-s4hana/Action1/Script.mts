@@ -29,7 +29,7 @@ AIUtil.FindTextBlock("Search").Click
 'AIUtil("button", "Save").Click
 
 wait (10)
-AIUtil.FindTextBlock("Exit").Click
+'AIUtil.FindTextBlock("Exit").Click
 wait (2)
 AIUtil("left_triangle").Click
 
