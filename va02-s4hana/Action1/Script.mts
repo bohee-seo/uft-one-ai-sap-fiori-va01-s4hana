@@ -25,4 +25,7 @@ AIUtil("check_mark").Click
 AIUtil("search", micAnyText, micFromBottom, 1).Click
 AIUtil("button", "Save").Click
 AIUtil("left_triangle").Click
+wait (2)
+AIUtil("left_triangle").Click
+wait(2)
 AIUtil("left_triangle").Click
