@@ -16,16 +16,21 @@ AIUtil.FindTextBlock("VA02").Click
 Order_number=Parameter("Order_number")
 Sales_org=Parameter("Sales_org")
 
+'AIUtil("text_box", "Order:").Click
+set objSendKey=CreateObject("WScript.shell")
+objSendKey.SendKeys "{BACKSPACE}"
 
-AIUtil("search", micAnyText, micFromTop, 2).Click
-'AIUtil("text_box", "").Type Sales_org
-AIUtil.FindTextBlock("Find").Click
+AIUtil("text_box", "Order:").Type "4402"
+AIUtil.FindTextBlock("Search").Click
 
-AIUtil("check_mark").Click
-AIUtil("search", micAnyText, micFromBottom, 1).Click
-AIUtil("button", "Save").Click
-AIUtil("left_triangle").Click
+
+'AIUtil("check_mark").Click
+'AIUtil("search", micAnyText, micFromBottom, 1).Click
+'AIUtil("button", "Save").Click
+
+
+AIUtil.FindTextBlock("Exit").Click
 wait (2)
 AIUtil("left_triangle").Click
-wait(2)
-AIUtil("left_triangle").Click
+
+
