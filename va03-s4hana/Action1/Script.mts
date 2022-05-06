@@ -28,6 +28,12 @@ AIUtil.FindTextBlock("VA03").Click
 
 AIUtil.FindTextBlock("Create Sales Documents").CheckExists True ' wait for the nex page to come up
 ' BTW - note that this is "Create Sales Documents", but the .click above is on "Create Sales Orders"
+set objSendKey=CreateObject("WScript.shell")
+objSendKey.SendKeys "{BACKSPACE}"
+
+AIUtil("text_box", "Order:").Type Order_Num
+AIUtil.FindTextBlock("Search").Click
+
 
 AIUtil("text_box", "Standard Order: "&Order_Num).CheckExists True
 AIUtil("text_box", "Sold-To Party: "&Sold_to_Party).CheckExists True
