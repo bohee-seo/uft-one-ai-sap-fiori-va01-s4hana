@@ -7,3 +7,4 @@ RunAction "06_va01_create_new_order", oneIteration, , Parameter("Order_number")
 RunAction "07_va01_exit", oneIteration
 RunAction "99_logout", oneIteration
 RunAction "08_va02_change_order", oneIteration
+RunAction "09_va03_display_order", oneIteration
