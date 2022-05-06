@@ -20,8 +20,6 @@ Action0=Action0\Script.mts
 05_va01_order_details=Action6\Script.mts
 06_va01_create_new_order=Action9\Script.mts
 03_va01_create_sales_document=Action4\Script.mts
-08_va02_change_order=Action10\Script.mts
-09_va03_display_order=Action11\Script.mts
 
 [VuserProfiles]
 Profiles=Default Profile
@@ -90,9 +88,3 @@ Action9\ObjectRepository.bdb=
 Action4\Script.mts=
 Action4\Resource.mtr=
 Action4\ObjectRepository.bdb=
-Action10\Script.mts=
-Action10\Resource.mtr=
-Action10\ObjectRepository.bdb=
-Action11\Script.mts=
-Action11\Resource.mtr=
-Action11\ObjectRepository.bdb=

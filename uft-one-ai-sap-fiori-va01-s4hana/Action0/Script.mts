@@ -6,5 +6,3 @@ RunAction "05_va01_order_details", oneIteration, Parameter("item"), Parameter("M
 RunAction "06_va01_create_new_order", oneIteration, Parameter("Order_number")
 RunAction "07_va01_exit", oneIteration
 RunAction "99_logout", oneIteration
-RunAction "08_va02_change_order", oneIteration, Parameter("06_va01_create_new_order", "Order_number")
-RunAction "09_va03_display_order", oneIteration, "", Parameter("06_va01_create_new_order", "Order_number"), Parameter("Cust_reference"), Parameter("Ship_to_party"), Parameter("Sold_to_party")
