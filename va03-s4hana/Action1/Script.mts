@@ -40,3 +40,7 @@ AIUtil("text_box", "Sold-To Party: "&Sold_to_Party).CheckExists True
 AIUtil("text_box", "Ship-To Party: "&Ship_to_Party).CheckExists True
 AIUtil("text_box", "Cust. Ref. Date: "&Cust_ref_Date).CheckExists True
 AIUtil("text_box", "Pyt Terms: "&Pyt_Terms).CheckExists True
+
+AIUtil.FindTextBlock("Exit").Click
+wait (2)
+AIUtil("left_triangle").Click
