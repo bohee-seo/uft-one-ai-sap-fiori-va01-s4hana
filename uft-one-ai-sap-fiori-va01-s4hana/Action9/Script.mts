@@ -9,5 +9,5 @@ AIUtil("check_box", micAnyText, micWithAnchorOnRight, AIUtil("button", "Save")).
 StatusBarText = AIUtil.FindTextBlock(micAnyText, micWithAnchorOnLeft, AIUtil("check_box", micAnyText, micWithAnchorOnRight, AIUtil("button", "Save"))).GetText
 StatusBarArray = Split(StatusBarText," ")
 'msgbox "The Order number is " & StatusBarArray(2)
-Parameter("NewOrderNumber") = StatusBarArray(2)
+Parameter("Order_number") = StatusBarArray(2)
 

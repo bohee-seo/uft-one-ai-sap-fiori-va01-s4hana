@@ -4,17 +4,17 @@ AIUtil.SetContext AppContext																'Tell the AI engine to point at the 
 'AIUtil("plus").Click
 
 
-AIUtil("button", "", micWithAnchorBelow, AIUtil("button", "Item")).Click
-
-set objSendKey=CreateObject("WScript.shell")
-objSendKey.SendKeys "+{TAB}"
-objSendKey.SendKeys DataTable.Value("Item", "05_va01_order_details")
-objSendKey.SendKeys "{TAB}"
-objSendKey.SendKeys DataTable.Value("Material", "05_va01_order_details")
-objSendKey.SendKeys "{TAB}"
-objSendKey.SendKeys "{TAB}"
-objSendKey.SendKeys DataTable.Value("OrderQuantity", "05_va01_order_details")
-objSendKey.SendKeys "{TAB}"
-objSendKey.SendKeys DataTable.Value("UnitOfMeasure", "05_va01_order_details")
+'AIUtil("button", "", micWithAnchorBelow, AIUtil("button", "Item")).Click
+'
+'set objSendKey=CreateObject("WScript.shell")
+'objSendKey.SendKeys "+{TAB}"
+'objSendKey.SendKeys DataTable.Value("Item", "05_va01_order_details")
+'objSendKey.SendKeys "{TAB}"
+'objSendKey.SendKeys DataTable.Value("Material", "05_va01_order_details")
+'objSendKey.SendKeys "{TAB}"
+'objSendKey.SendKeys "{TAB}"
+'objSendKey.SendKeys DataTable.Value("OrderQuantity", "05_va01_order_details")
+'objSendKey.SendKeys "{TAB}"
+'objSendKey.SendKeys DataTable.Value("UnitOfMeasure", "05_va01_order_details")
 
 
