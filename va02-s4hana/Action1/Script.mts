@@ -28,7 +28,7 @@ AIUtil.FindTextBlock("Search").Click
 'AIUtil("search", micAnyText, micFromBottom, 1).Click
 'AIUtil("button", "Save").Click
 
-wait (10)
+wait (5)
 'AIUtil.FindTextBlock("Exit").Click
 wait (2)
 AIUtil("left_triangle").Click
