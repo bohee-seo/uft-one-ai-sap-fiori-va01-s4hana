@@ -17,5 +17,5 @@ For xxx = 1 To 10 Step 1 ' this is my favorite way to wait for a long time
 		Exit for
 	end if
 Next
-AIUtil.FindTextBlock("OK").Click
+'AIUtil.FindTextBlock("OK").Click
 AppContext.Close																			'Close the application at the end of your script
