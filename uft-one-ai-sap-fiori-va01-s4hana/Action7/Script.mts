@@ -3,4 +3,5 @@ AIUtil.SetContext AppContext																'Tell the AI engine to point at the 
 
 AIUtil.FindTextBlock("Exit").Click
 wait (3)
+AIUtil.FindTextBlock("Apps").Exist
 AIUtil("left_triangle").Click
