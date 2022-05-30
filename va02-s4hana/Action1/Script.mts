@@ -8,8 +8,6 @@ For xxx = 1 To 10 Step 1 ' this is my favorite way to wait for a long time
 Next
 
 AIUtil("search").click
-set objSendKey=CreateObject("WScript.shell")
-objSendKey.SendKeys "{BACKSPACE}"
 
 AIUtil("search").Search "va02" ' note - this does not seem to work with IE, but does indeed work fine with Chrome
 If AIUtil.FindTextBlock("Apps").Exist (120) then ' you have to sync on the Apps text in the left pane - not on the actual Create Sales Order
