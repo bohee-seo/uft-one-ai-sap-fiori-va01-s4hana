@@ -36,7 +36,7 @@ AIUtil.FindTextBlock("Search", micFromBottom,2).Click
 
 
 'AIUtil("check_mark").Click
-'AIUtil("search", micAnyText, micFromBottom, 1).Click
+'AIUtil("search", micAnyText, micFromTop, 3).Click
 'AIUtil("button", "Save").Click
 
 wait (5)
