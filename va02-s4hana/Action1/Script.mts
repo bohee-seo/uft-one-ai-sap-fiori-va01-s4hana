@@ -31,8 +31,8 @@ set objSendKey=CreateObject("WScript.shell")
 objSendKey.SendKeys "{BACKSPACE}"
 wait (2)
 AIUtil("text_box", "Order:").Type Order_number
-wait(2)
-AIUtil.FindTextBlock("Search").Click
+wait(3)
+AIUtil.FindTextBlock("Search", micFromBottom,2).Click
 
 
 'AIUtil("check_mark").Click
