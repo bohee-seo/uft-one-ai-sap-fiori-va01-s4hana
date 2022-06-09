@@ -16,6 +16,9 @@ Do
 		ExitScript
 	End If
 Loop Until AIUtil.FindTextBlock("Apps").Exist
+
+AIUtil.FindTextBlock("Create Sales Orders").Click
+
 counter = 0
 Do
 	counter = counter + 1
@@ -25,5 +28,5 @@ Do
 	End If
 Loop Until AIUtil.FindTextBlock("Create Sales Documents").Exist
 
-AIUtil.FindTextBlock("Create Sales Orders").Click
+
 AIUtil("text_box", "Order Type:").CheckExists True
