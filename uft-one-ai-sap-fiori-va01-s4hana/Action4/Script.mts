@@ -17,7 +17,7 @@ Sales_org=Parameter("Sales_org")
 AIUtil("text_box", "Order Type:").Type Order_type
 set objSendKey=CreateObject("WScript.shell")
 objSendKey.SendKeys "{TAB}{BACKSPACE}"
-AIUtil("text_box", "Division").Type Division
+AIUtil("text_box", "Division").Type "00"
 AIUtil("text_box", "Distribution Channel:").Type Distribution_channel
 AIUtil("text_box", "Sales Organization:").Type Sales_org
 AIUtil("button", "Continue").Click
