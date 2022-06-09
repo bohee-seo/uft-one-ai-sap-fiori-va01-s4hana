@@ -12,3 +12,4 @@ Do
 Loop Until AIUtil.FindTextBlock("Apps").Exist
 
 AIUtil("left_triangle").Click
+AIUtil("left_triangle").Click
