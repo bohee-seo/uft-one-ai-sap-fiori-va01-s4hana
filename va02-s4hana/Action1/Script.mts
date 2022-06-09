@@ -32,8 +32,8 @@ objSendKey.SendKeys "{BACKSPACE}"
 wait (2)
 AIUtil("text_box", "Order:").Type Order_number
 wait(3)
-AIUtil.FindTextBlock("Search", micFromTop,2).Click
-
+'AIUtil.FindTextBlock("Search", micFromTop,2).Click
+AIUtil("button", "Continue").Click
 
 'AIUtil("check_mark").Click
 'AIUtil("search", micAnyText, micFromTop, 3).Click
