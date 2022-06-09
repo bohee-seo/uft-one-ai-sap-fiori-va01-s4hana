@@ -19,11 +19,11 @@ Loop Until AIUtil.FindTextBlock("Apps").Exist
 counter = 0
 Do
 	counter = counter + 1
-	AIUtil.FindTextBlock("Create Sales Orders").Click
 	If counter >= 120 Then
 		msgbox "The Create Sales Order text block isn't disappearing like it should, check application"
 		ExitScript
 	End If
 Loop Until AIUtil.FindTextBlock("Create Sales Documents").Exist
 
+AIUtil.FindTextBlock("Create Sales Orders").Click
 AIUtil("text_box", "Order Type:").CheckExists True
