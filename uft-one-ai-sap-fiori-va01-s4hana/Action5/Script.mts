@@ -5,9 +5,10 @@ Cust_reference=Parameter("Cust_reference")
 Ship_to_party=Parameter("Ship_to_party")
 Sold_to_party=Parameter("Sold_to_party")
 
-'dlskfljldf
+
 AIUtil("text_box", "Cust. Reference:").Type Cust_reference
 AIUtil("text_box", "Cust. Ref. Date:").Type FormatDateTime((Date-1), 2)
 AIUtil("text_box", "Ship-To Party:").Type Ship_to_party
 AIUtil("text_box", "Sold-To Party:").Type Sold_to_party
+
 
