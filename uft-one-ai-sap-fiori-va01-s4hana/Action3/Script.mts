@@ -4,8 +4,8 @@ Set AppContext=Browser("CreationTime:=0")												'Set the variable for what 
 AIUtil.SetContext AppContext																'Tell the AI engine to point at the application
 
 AIUtil("search").Search "va01"
-wait (10)
-AIUtil("search").Search "va01"
+'wait (10)
+'AIUtil("search").Search "va01"
 
 counter = 0
 Do
