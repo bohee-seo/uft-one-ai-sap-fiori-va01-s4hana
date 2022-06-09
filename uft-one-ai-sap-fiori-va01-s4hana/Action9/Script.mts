@@ -5,9 +5,11 @@ set objSendKey=CreateObject("WScript.shell")
 objSendKey.SendKeys "{F11}"
 AIUtil.FindText("has been saved").CheckExists TRUE
 AIUtil.SetContext Browser("creationtime:=0")
-AIUtil("check_box", micAnyText, micWithAnchorOnRight, AIUtil("button", "Save")).CheckExists True
-StatusBarText = AIUtil.FindTextBlock(micAnyText, micWithAnchorOnLeft, AIUtil("check_box", micAnyText, micWithAnchorOnRight, AIUtil("button", "Save"))).GetText
+AIUtil("close", micAnyText, micWithAnchorOnRight, AIUtil("button", "Save")).CheckExists True
+StatusBarText = AIUtil.FindTextBlock(micAnyText, micWithAnchorOnLeft, AIUtil("close", micAnyText, micWithAnchorOnRight, AIUtil("button", "Save"))).GetText
+print StatusBarText
 StatusBarArray = Split(StatusBarText," ")
-'msgbox "The Order number is " & StatusBarArray(2)
 Parameter("Order_number") = StatusBarArray(2)
+print Parameter("Order_number") 
 
+AIUtil("close").CheckExists True
