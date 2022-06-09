@@ -3,8 +3,10 @@
 Set AppContext=Browser("CreationTime:=0")												'Set the variable for what application (in this case the browser) we are acting upon
 AIUtil.SetContext AppContext																'Tell the AI engine to point at the application
 
+AIUtil("search").Click
+AIUtil.FindTextBlock("Search").Exist
+AIUtil("text_box", "Search").Type "va01"
 
-AIUtil("search").Search "va01"
 counter = 0
 Do
 	counter = counter + 1
