@@ -3,15 +3,17 @@ AIUtil.SetContext AppContext																'Tell the AI engine to point at the 
 
 AIUtil("search").Search "va01"
 
-counter = 0
-Do
-	counter = counter + 1
-	wait 1
-	If counter >= 120 Then
-		msgbox "The search returning the text Apps didn't display within " & counter & " attempts.  Check the application."
-		ExitScript
-	End If
-Loop Until AIUtil.FindTextBlock("Apps").Exist
+wait(10)
+AIUtil.FindTextBlock("Apps").Exist
+'counter = 0
+'Do
+'	counter = counter + 1
+'	wait 1
+'	If counter >= 120 Then
+'		msgbox "The search returning the text Apps didn't display within " & counter & " attempts.  Check the application."
+'		ExitScript
+'	End If
+'Loop Until AIUtil.FindTextBlock("Apps").Exist
 
 AIUtil.FindTextBlock("Create Sales Orders.").Click
 
